@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="uz" data-theme="dark" data-page-title="titles.home">
 <head>
   <meta charset="UTF-8">
@@ -66,8 +66,8 @@
       </div>
 
       <div class="hero-actions">
-        <a href="pages/test.html" class="btn btn-primary btn-lg" id="start-test-hero-btn" data-i18n="hero.start"></a>
-        <a href="pages/levels.html" class="btn btn-secondary btn-lg" data-i18n="hero.levels"></a>
+        <a href="test.html" class="btn btn-primary btn-lg" id="start-test-hero-btn" data-i18n="hero.start"></a>
+        <a href="levels.html" class="btn btn-secondary btn-lg" data-i18n="hero.levels"></a>
       </div>
 
       <div class="hero-panel">
@@ -259,8 +259,8 @@
       <p>&copy; 2026 LevelX Project. <span data-i18n="hero.footer"></span></p>
       <ul class="footer-links">
         <li><a href="index.html">Bosh sahifa</a></li>
-        <li><a href="pages/levels.html">Darajalar</a></li>
-        <li><a href="pages/stats.html">Statistika</a></li>
+        <li><a href="levels.html">Darajalar</a></li>
+        <li><a href="stats.html">Statistika</a></li>
       </ul>
     </div>
   </footer>
@@ -285,7 +285,7 @@
       if (currentUser) {
         // Logged in
         authContainer.innerHTML = `
-          <a href="pages/profile.html" class="nav-avatar-pill" aria-label="Profil">
+          <a href="profile.html" class="nav-avatar-pill" aria-label="Profil">
             <span class="nav-avatar-badge">${currentUser.firstName.charAt(0).toUpperCase()}</span>
             <span class="nav-avatar-name">${currentUser.firstName}</span>
           </a>
@@ -298,7 +298,7 @@
         });
       } else {
         // Not logged in -> point test starting to auth registration
-        startTestBtn.href = "pages/auth.html?redirect=test";
+        startTestBtn.href = "auth.html?redirect=test";
         
         // Setup a temporary mock admin if no users registered yet
         const users = State.getAllUsers();
@@ -426,4 +426,3 @@
   </script>
 </body>
 </html>
-
